@@ -348,7 +348,7 @@ footer {
 .background-about {
 padding-top: 200px;
 padding-bottom: 200px;
-width: 1600px;
+max-width: 1600px;
 height: 600px;
 margin-left: auto;
 margin-right: auto;

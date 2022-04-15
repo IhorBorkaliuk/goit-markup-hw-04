@@ -28,6 +28,10 @@ address {
   margin-top: 20px;
 }
 
+svg {
+  fill: var(--primary-text-color)
+}
+
 .list {
   list-style-type: none;
   margin: 0px;
@@ -70,12 +74,6 @@ section {
   margin-right: 0px;
 }
 
-.item-contact {
-  margin-left: auto;
-}
-.header-box .item-contact + .item-contact {
-  margin-left: 50px;
-}
 
 .contact-list {
   display: flex;
@@ -83,6 +81,30 @@ section {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
+}
+
+.contact-button {
+  padding: 0px;
+  border: none;
+  background-color: var(--just-white-color);
+}
+
+.icons {
+  margin-right: 10px;
+  fill: var(--primary-text-color)
+}
+
+.icons:hover,
+.icons:focus {
+  fill: var(--accent-text-color)
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts:nth-child(3) {
+ margin-left: 30px;
 }
 
 .logo-link-top:hover,
@@ -140,6 +162,22 @@ section {
   color: var(--primary-text-color);
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+
+.icon-ben {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.benefits {
+display: flex;
+width: 270px;
+height: 120px;
+background: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
 }
 
 .hero-title {
@@ -308,9 +346,13 @@ footer {
 }
 
 .background-about {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--bg-color);
+padding-top: 200px;
+padding-bottom: 200px;
+width: 1600px;
+height: 600px;
+margin-left: auto;
+margin-right: auto;
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 }
 
 /* Вторая страница */

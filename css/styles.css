@@ -8,6 +8,7 @@
   --bg-color-team: #f5f4fa;
   --order-button-color: #188ce8;
   --bg-color-button: #f5f4fa;
+  --soc-item-color: #AFB1B8;
 }
 
 header {
@@ -26,10 +27,6 @@ img {
 
 address {
   margin-top: 20px;
-}
-
-svg {
-  fill: var(--primary-text-color)
 }
 
 .list {
@@ -91,7 +88,7 @@ section {
 
 .icons {
   margin-right: 10px;
-  fill: var(--primary-text-color)
+  fill: currentColor;
 }
 
 .contacts {
@@ -148,7 +145,6 @@ section {
 .link-contact:hover,
 .link-contact:focus {
   color: var(--accent-text-color);
-  fill: var(--accent-text-color)
 }
 
 .link-contact {
@@ -240,6 +236,9 @@ margin-bottom: 30px;
 .title-text {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--just-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .title-names {
@@ -326,8 +325,6 @@ margin-bottom: 30px;
   padding: 0px;
 }
 
-
-
 .accent,
 .accent-white:focus {
   color: var(--accent-text-color);
@@ -351,6 +348,31 @@ height: 600px;
 margin-left: auto;
 margin-right: auto;
 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+}
+
+.soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.soc-item + .soc-item {
+  margin-left: 10px;
+}
+
+.soc-icon {
+fill: var(--soc-item-color);
+}
+
+.soc-icon:hover {
+  fill: var(--accent-text-color);
+}
+
+.team-list svg {
+  fill: var(--soc-item-color);
 }
 
 /* Вторая страница */

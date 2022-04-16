@@ -94,16 +94,11 @@ section {
   fill: var(--primary-text-color)
 }
 
-.icons:hover,
-.icons:focus {
-  fill: var(--accent-text-color)
-}
-
 .contacts {
   display: flex;
 }
 
-.contacts:nth-child(3) {
+.contacts:nth-child(2) {
  margin-left: 30px;
 }
 
@@ -153,9 +148,12 @@ section {
 .link-contact:hover,
 .link-contact:focus {
   color: var(--accent-text-color);
+  fill: var(--accent-text-color)
 }
 
 .link-contact {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;

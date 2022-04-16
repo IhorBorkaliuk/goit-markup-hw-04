@@ -363,6 +363,7 @@ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 
   margin-left: 10px;
 }
 
+
 .soc-icon {
 fill: var(--soc-item-color);
 }
@@ -373,6 +374,26 @@ fill: var(--soc-item-color);
 
 .team-list svg {
   fill: var(--soc-item-color);
+}
+
+
+.icon-partners {
+  fill: var(--soc-item-color);
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.icon-partners:hover,
+.icon-partners:focus {
+  fill: var(--accent-text-color);
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between
 }
 
 /* Вторая страница */

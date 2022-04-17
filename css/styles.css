@@ -558,3 +558,6 @@ text-transform: uppercase;
 color: var(--just-white-color)
 }
 
+.test {
+  display: flex;
+}

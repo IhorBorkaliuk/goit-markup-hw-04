@@ -117,8 +117,13 @@ section {
   text-decoration: none;
 }
 
-.no-underline {
+.port-link {
   text-decoration: none;
+}
+
+.portfolio-items:hover,
+.portfolio-items:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .link-nav:hover,
@@ -301,7 +306,8 @@ margin-bottom: 30px;
   letter-spacing: 0.03em;
   color: var(--just-white-color);
 }
-.address-link:hover {
+.address-link:hover,
+.address-link:focus {
   color: var(--just-white-color);
 }
 .address-link {
@@ -326,7 +332,8 @@ margin-bottom: 30px;
 }
 
 .accent,
-.accent-white:focus {
+.accent-white:focus,
+.accent-white:hover {
   color: var(--accent-text-color);
 }
 
@@ -335,6 +342,7 @@ margin-bottom: 30px;
 }
 
 footer {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-color);
@@ -373,7 +381,8 @@ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 
   color: var(--soc-item-color)
 }
 
-.soc-link:hover {
+.soc-link:hover,
+.soc-link:focus {
   background-color: var(--accent-text-color);
   color: var(--just-white-color);
   }
@@ -472,6 +481,7 @@ button {
 }
 
 .button-list {
+  border: none;
   padding: 6px 22px;
   background-color: var(--bg-color-button);
   font-weight: 500;
@@ -479,10 +489,14 @@ button {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
 }
-.button-list:hover {
+.button-list:hover,
+.button-list:focus {
   color: var(--just-white-color);
   background-color: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .button-order:hover {
@@ -491,6 +505,7 @@ button {
 }
 
 .button-order {
+  border: none;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -524,6 +539,8 @@ button {
   margin-right: 0px;
 }
 .buttonall {
+  border: none;
+  border-radius: 4px;
   padding: 6px 22px;
   color: var(--just-white-color);
   font-weight: 500;
@@ -536,6 +553,8 @@ button {
 
 .buttonall:hover {
   color: var(--just-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .border {
@@ -550,6 +569,7 @@ button {
 
 
 .invite {
+margin: 0px;
 font-weight: 700;
 font-size: 14px;
 line-height: 16px;
@@ -558,6 +578,42 @@ text-transform: uppercase;
 color: var(--just-white-color)
 }
 
-.test {
+.soc-foot-list {
   display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.soc-item-footer + .soc-item-footer {
+  margin-left: 10px;
+}
+
+.soc-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: var(--just-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.soc-link-footer:hover,
+.soc-link-footer:focus {
+  background-color: var(--accent-text-color);
+}
+
+.soc-icon-footer {
+  fill: currentColor;
+}
+
+.position {
+  display: flex;
+}
+
+.invite-block {
+  margin-left: 70px;
 }

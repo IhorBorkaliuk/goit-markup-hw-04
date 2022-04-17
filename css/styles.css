@@ -354,7 +354,7 @@ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 28px;
+  margin-top: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -363,14 +363,31 @@ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 
   margin-left: 10px;
 }
 
+.soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: var(--just-white-color);
+  background-color: var(--just-white-color);
+}
+
+.soc-link:hover,
+.soc-link:focus {
+background-color: var(--accent-text-color);
+}
+
+.soc-icon:hover,
+.soc-icon:focus {
+  fill: var(--just-white-color);
+}
 
 .soc-icon {
-fill: var(--soc-item-color);
+fill: currentColor
 }
 
-.soc-icon:hover {
-  fill: var(--accent-text-color);
-}
 
 .team-list svg {
   fill: var(--soc-item-color);

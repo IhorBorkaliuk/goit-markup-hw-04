@@ -370,45 +370,43 @@ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  color: var(--soc-item-color)
+}
+
+.soc-link:hover {
+  background-color: var(--accent-text-color);
   color: var(--just-white-color);
-  background-color: var(--just-white-color);
-}
-
-.soc-link:hover,
-.soc-link:focus {
-background-color: var(--accent-text-color);
-}
-
-.soc-icon:hover,
-.soc-icon:focus {
-  fill: var(--just-white-color);
-}
+  }
 
 .soc-icon {
-fill: currentColor
+  fill: currentColor;
 }
 
-
-.team-list svg {
-  fill: var(--soc-item-color);
-}
 
 
 .icon-partners {
-  fill: var(--soc-item-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   cursor: pointer;
+  fill: var(--soc-item-color);
 }
 
 .icon-partners:hover,
 .icon-partners:focus {
   fill: var(--accent-text-color);
+  border: 1px solid var(--accent-text-color)
 }
 
+
+
 .partners {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between
 }
@@ -549,3 +547,14 @@ button {
   border-right: 1px solid #EEEEEE;
   border-left: 1px solid #EEEEEE;
 }
+
+
+.invite {
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--just-white-color)
+}
+

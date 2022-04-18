@@ -381,19 +381,18 @@ background-size: auto;
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  color: var(--soc-item-color)
+  color: var(--soc-item-color);
+}
+
+.soc-icon {
+  fill: currentColor;
 }
 
 .soc-link:hover,
 .soc-link:focus {
   background-color: var(--accent-text-color);
   color: var(--just-white-color);
-  }
-
-.soc-icon {
-  fill: currentColor;
 }
-
 
 
 .icon-partners {
@@ -407,14 +406,17 @@ background-size: auto;
   border-radius: 4px;
   cursor: pointer;
   fill: var(--soc-item-color);
-}
-
-  .icon-partners:hover,
-  .icon-partners:focus {
-    fill: var(--accent-text-color);
-    border: 1px solid var(--accent-text-color)
   }
 
+  .link-partner {
+    display: flex;
+  }
+
+  .link-partner:hover .icon-partners,
+  .link-partner:focus .icon-partners {
+    fill: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color)
+}
 
 
 .partners {

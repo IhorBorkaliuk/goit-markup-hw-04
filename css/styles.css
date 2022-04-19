@@ -376,17 +376,20 @@ background-size: auto;
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  color: var(--soc-item-color);
 }
 
 .soc-icon {
-  fill: currentColor;
+  fill: var(--soc-item-color);
 }
 
 .soc-link:hover,
 .soc-link:focus {
   background-color: var(--accent-text-color);
-  color: var(--just-white-color);
+}
+
+.soc-link:hover .soc-icon,
+.soc-link:focus .soc-icon {
+  fill: var(--just-white-color);
 }
 
   .link-partner {
@@ -598,7 +601,6 @@ color: var(--just-white-color)
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  color: var(--just-white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -608,7 +610,7 @@ color: var(--just-white-color)
 }
 
 .soc-icon-footer {
-  fill: currentColor;
+  fill: var(--just-white-color);
 }
 
 .position {

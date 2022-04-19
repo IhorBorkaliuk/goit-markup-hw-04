@@ -121,8 +121,8 @@ section {
   text-decoration: none;
 }
 
-.portfolio-items:hover,
-.portfolio-items:focus {
+.port-link:hover,
+.port-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -163,15 +163,10 @@ section {
   letter-spacing: 0.02em;
 }
 
-.icon-ben {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .benefits {
 display: flex;
+justify-content: center;
+align-items: center;
 width: 270px;
 height: 120px;
 background: #F5F4FA;
@@ -394,35 +389,36 @@ background-size: auto;
   color: var(--just-white-color);
 }
 
-
-.icon-partners {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  cursor: pointer;
-  fill: var(--soc-item-color);
-  }
-
   .link-partner {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--soc-item-color)
   }
 
-  .link-partner:hover .icon-partners,
-  .link-partner:focus .icon-partners {
-    fill: var(--accent-text-color);
-    border: 1px solid var(--accent-text-color)
+  .icon-partners {
+    fill: currentColor;
+    }
+
+  .link-partner:hover,
+  .link-partner:focus {
+    color: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
 }
 
 
 .partners {
   margin-top: 50px;
   display: flex;
-  justify-content: space-between
+}
+
+.item-partners + .item-partners {
+  margin-left: 30px;
 }
 
 /* Вторая страница */
@@ -449,6 +445,7 @@ background-size: auto;
 }
 
 .portfolio-items {
+  display: flex;
   margin-top: 30px;
   margin-right: 30px;
 }
@@ -501,7 +498,6 @@ button {
   color: var(--just-white-color);
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .button-order:hover {
@@ -617,6 +613,7 @@ color: var(--just-white-color)
 
 .position {
   display: flex;
+  align-items: baseline;
 }
 
 .invite-block {
